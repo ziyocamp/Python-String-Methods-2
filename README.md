@@ -5,7 +5,7 @@
 
 | Input                                                           | Output                                       |
 | --------------------------------------------------------------- | -------------------------------------------- |
-| `"Salom, mening ismim {} va yoshim {}.".format("Diyorbek", 23)` | `Salom, mening ismim Diyorbek va yoshim 23.` |
+| `"Diyorbek"`, `23` | `Salom, mening ismim Diyorbek va yoshim 23.` |
 
 ---
 
@@ -16,7 +16,7 @@ Mahsulot nomi va narxini matnga joylashtiring.
 
 | Input                                          | Output                      |
 | ---------------------------------------------- | --------------------------- |
-| `"{} mahsuloti narxi ${}".format("Olma", 1.5)` | `Olma mahsuloti narxi $1.5` |
+| `"Olma"`, `1.5` | `Olma mahsuloti narxi $1.5` |
 
 ---
 
@@ -27,7 +27,7 @@ Fayl nomi va uning turini `format()` yordamida ko‘rsating.
 
 | Input                                   | Output             |
 | --------------------------------------- | ------------------ |
-| `"Fayl: {}.{}".format("report", "pdf")` | `Fayl: report.pdf` |
+| `"report"`, `"pdf"` | `Fayl: report.pdf` |
 
 ---
 
@@ -38,7 +38,7 @@ Kun va soatni formatda chiqarish.
 
 | Input                                                      | Output                                  |
 | ---------------------------------------------------------- | --------------------------------------- |
-| `"Bugun {} kuni, dars soat {} da.".format("Dushanba", 14)` | `Bugun Dushanba kuni, dars soat 14 da.` |
+| `"Dushanba"`, 1`4` | `Bugun Dushanba kuni, dars soat 14 da.` |
 
 ---
 
@@ -49,7 +49,7 @@ Matematik amalni ifodalashda formatdan foydalaning.
 
 | Input                             | Output       |
 | --------------------------------- | ------------ |
-| `"{} + {} = {}".format(5, 7, 12)` | `5 + 7 = 12` |
+| `5`, `7` | `5 + 7 = 12` |
 
 ---
 
@@ -60,7 +60,7 @@ Email adresidagi `@` belgisi nechinchi pozitsiyada turganini aniqlang.
 
 | Input                       | Output |
 | --------------------------- | ------ |
-| `"ali@gmail.com".find("@")` | `3`    |
+| `"ali@gmail.com"`, `"@"` | `3`    |
 
 ---
 
@@ -71,7 +71,7 @@ Email adresidagi `@` belgisi nechinchi pozitsiyada turganini aniqlang.
 
 | Input                                                       | Output |
 | ----------------------------------------------------------- | ------ |
-| `"Men Python dasturlash tilini o‘rganaman".index("Python")` | `4`    |
+| `"Men Python dasturlash tilini o‘rganaman"`, `"Python"` | `4`    |
 
 ---
 
@@ -82,7 +82,7 @@ Faqat birinchi topilgan joyni chiqaring.
 
 | Input                                               | Output |
 | --------------------------------------------------- | ------ |
-| `"kitoblar kitob do‘konida sotiladi".find("kitob")` | `0`    |
+| `"kitoblar kitob do‘konida sotiladi"`, `"kitob"` | `0`    |
 
 ---
 
@@ -93,7 +93,7 @@ Faqat birinchi topilgan joyni chiqaring.
 
 | Input                            | Output |
 | -------------------------------- | ------ |
-| `"salom salom".find("salom", 2)` | `6`    |
+| `"salom salom"`, `"salom"`, `2` | `6`    |
 
 ---
 
@@ -104,7 +104,7 @@ Faqat birinchi topilgan joyni chiqaring.
 
 | Input                       | Output |
 | --------------------------- | ------ |
-| `"Hello world".find("bye")` | `-1`   |
+| `"Hello world"`, `"bye"` | `-1`   |
 
 ---
 
@@ -118,7 +118,7 @@ Faqat birinchi topilgan joyni chiqaring.
 
 | Input                                | Output |
 | ------------------------------------ | ------ |
-| `"salom, qanday ishsiz?".count("a")` | `3`    |
+| `"salom, qanday ishsiz?"`, `"a"` | `3`    |
 
 ---
 
@@ -128,7 +128,7 @@ Faqat birinchi topilgan joyni chiqaring.
 
 | Input                                         | Output |
 | --------------------------------------------- | ------ |
-| `"Bu Python darsi juda qiziqarli".count(" ")` | `4`    |
+| `"Bu Python darsi juda qiziqarli"`, `" "` | `4`    |
 
 ---
 
@@ -138,7 +138,7 @@ Faqat birinchi topilgan joyni chiqaring.
 
 | Input                                         | Output |
 | --------------------------------------------- | ------ |
-| `"user1@mail.com, user2@mail.com".count("@")` | `2`    |
+| `"user1@mail.com, user2@mail.com"`, `"@"` | `2`    |
 
 ---
 
@@ -148,7 +148,7 @@ Faqat birinchi topilgan joyni chiqaring.
 
 | Input                        | Output |
 | ---------------------------- | ------ |
-| `"pythonpyPYpy".count("py")` | `2`    |
+| `"pythonpyPYpy"`, `"py"` | `2`    |
 
 ---
 
@@ -158,7 +158,7 @@ Faqat birinchi topilgan joyni chiqaring.
 
 | Input                                   | Output |
 | --------------------------------------- | ------ |
-| `"file.txt.2025.report.doc".count(".")` | `3`    |
+| `"file.txt.2025.report.doc"`, `"."` | `3`    |
 
 ---
 
@@ -169,7 +169,7 @@ Saytdagi ro‘yxatdan o‘tishda ismlar `isalpha()` bilan tekshiriladi.
 
 | Input                  | Output |
 | ---------------------- | ------ |
-| `"Diyorbek".isalpha()` | `True` |
+| `"Diyorbek"` | `True` |
 
 ---
 
@@ -180,7 +180,7 @@ Ro‘yxatdan o‘tishda `isdigit()` orqali raqam mavjudligi tekshiriladi.
 
 | Input                 | Output  |
 | --------------------- | ------- |
-| `"pass123".isdigit()` | `False` |
+| `"pass123"` | `False` |
 
 ---
 
@@ -190,7 +190,7 @@ Ro‘yxatdan o‘tishda `isdigit()` orqali raqam mavjudligi tekshiriladi.
 
 | Input              | Output |
 | ------------------ | ------ |
-| `"2025".isdigit()` | `True` |
+| `"2025"` | `True` |
 
 ---
 
@@ -201,7 +201,7 @@ Katta harf/kichik harf farqini yo‘qotish uchun foydali.
 
 | Input               | Output    |
 | ------------------- | --------- |
-| `"Telefon".lower()` | `telefon` |
+| `"Telefon"` | `telefon` |
 
 ---
 
@@ -212,6 +212,6 @@ Blog sarlavhalarini silliqlash uchun ishlatiladi.
 
 | Input                               | Output                    |
 | ----------------------------------- | ------------------------- |
-| `"python dasturlash kursi".title()` | `Python Dasturlash Kursi` |
+| `"python dasturlash kursi"` | `Python Dasturlash Kursi` |
 
 ---
