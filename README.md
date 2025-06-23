@@ -176,11 +176,12 @@ Saytdagi ro‘yxatdan o‘tishda ismlar `isalpha()` bilan tekshiriladi.
 ### 🟦 Task17
 
 **Parol kamida 1 ta raqamdan iboratmi?**
-Ro‘yxatdan o‘tishda `isdigit()` orqali raqam mavjudligi tekshiriladi.
+Ro‘yxatdan o‘tishda `password` kamida 1 ta raqam qatnashgan bo'lishi shart.
 
 | Input                 | Output  |
 | --------------------- | ------- |
-| `"pass123"` | `False` |
+| `"pass123"` | `True` |
+| `"password"` | `False` |
 
 ---
 
